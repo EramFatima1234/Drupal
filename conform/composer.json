@@ -1,0 +1,14 @@
+{
+  "name": "drupal/conform",
+  "type": "drupal-module",
+  "description": "My Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/conform",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/conform",
+    "source": "http://cgit.drupalcode.org/conform"
+  },
+  "require": { }
+}

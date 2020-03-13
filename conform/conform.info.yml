@@ -1,0 +1,5 @@
+name: conform
+type: module
+description: My Module
+core: 8.x
+package: Custom

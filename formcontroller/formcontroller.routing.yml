@@ -1,0 +1,15 @@
+formcontroller:
+  path: '/myform'
+  defaults:
+    _form: '\Drupal\formcontroller\Forms\SimpleForm'
+    _title: 'My Custom Form'
+  requirements:
+    _permission: 'access content'
+
+mymod.content:
+  path: '/mymod' 
+  defaults: 
+    _controller: '\Drupal\formcontroller\Controller\FormController::content' 
+    _title: 'Form Data'
+  requirements: 
+    _role: 'administrator' 
