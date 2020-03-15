@@ -1,0 +1,5 @@
+name: Register
+type: module
+core: '8.x'
+description: Register Form with controller and Twigs
+package: Erams Modules

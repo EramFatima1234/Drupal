@@ -1,0 +1,15 @@
+register:
+  path: '/register/'
+  defaults:
+    _title: 'Register Yourself for the Custom Controller'
+    _form: 'Drupal\register\Form\RegisterForm'
+  requirements:
+    _permission: 'access content'
+
+controller:
+  path: '/register/data' 
+  defaults: 
+    _controller: '\Drupal\register\Controller\RegisterController::content' 
+    _title: 'Registered Data'
+  requirements: 
+    _permission: 'access content' 
