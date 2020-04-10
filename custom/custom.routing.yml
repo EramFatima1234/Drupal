@@ -1,0 +1,30 @@
+custom.register:
+  path: '/custom/form/register'
+  defaults:
+    _form: '\Drupal\custom\Form\register'
+    _title: 'register'
+  requirements:
+    _access: 'TRUE'
+
+custom.register_controller_hello:
+  path: '/custom/hello/{name}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\RegisterController::showdata'
+    _title: 'Display'
+  requirements:
+    _permission: 'access content'
+custom.control_form:
+  path: '/custom/form/control'
+  defaults:
+    _form: '\Drupal\custom\Form\ControlForm'
+    _title: 'ControlForm'
+  requirements:
+    _access: 'TRUE'
+
+custom.control_controller_hello:
+  path: '/control/hello/{name}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\ControlController::showdatas'
+    _title: 'data'
+  requirements:
+    _permission: 'access content'

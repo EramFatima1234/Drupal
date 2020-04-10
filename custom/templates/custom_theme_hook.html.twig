@@ -1,0 +1,28 @@
+<h1>Data from the Register Form</h1>
+<hr><br>
+<div>
+	{{ caption }}
+</div>
+
+
+<table class="table">
+	<thead>
+		<tr>
+            {% for item in header %}
+			<th> {{ item }} </th>
+            {% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for data in rows %}
+			{% for row in data %}
+			<tr>
+				{% for item in row %}
+					<td> {{ item }} </td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		{% endfor %}
+	
+	</tbody>
+</table>
