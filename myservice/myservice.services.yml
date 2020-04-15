@@ -1,0 +1,4 @@
+services:
+    myservice:
+        class: Drupal\myservice\MyService
+        arguments: ['@password', '@current_user']

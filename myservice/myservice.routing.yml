@@ -1,0 +1,15 @@
+myservice:
+  path: 'myservice/{pw}'
+  defaults:
+    _controller: '\Drupal\myservice\MyServiceController::work'
+    _title: 'My awesome custom service'
+  requirements:
+    _permission: 'access content'
+
+getuser:
+  path: 'getuser'
+  defaults:
+    _controller: '\Drupal\myservice\MyServiceController::worker'
+    _title: 'Current Drupal User'
+  requirements:
+    _permission: 'access content'
