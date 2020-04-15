@@ -1,5 +1,0 @@
-name: My Service
-type: module
-description: My Service which can do something awesome when called for service.
-core: 8.x
-package: Erams Modules
